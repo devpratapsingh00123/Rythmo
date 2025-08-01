@@ -1,0 +1,14 @@
+<!-- res/drawable/main_background_gradient.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="16dp" />
+
+
+    <gradient xmlns:android="http://schemas.android.com/apk/res/android"
+        android:type="linear"
+        android:angle="270"
+        android:startColor="@color/rythmo_purple_light"
+        android:centerColor="@color/rythmo_purple_mid"
+        android:endColor="@color/rythmo_purple_dark" />
+
+</shape>

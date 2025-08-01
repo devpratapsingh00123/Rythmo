@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="mood selection" />
+    <item
+        android:id="@+id/menu_my_music"
+        android:title="Your Music" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title=" Stats" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Log out" />
+
+</menu>

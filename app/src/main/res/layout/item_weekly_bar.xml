@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="8dp">
+
+    <!-- Day label -->
+    <TextView
+        android:id="@+id/dayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Bar -->
+    <View
+        android:id="@+id/barView"
+        android:layout_width="24dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bar_gradient"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Duration below bar -->
+    <TextView
+        android:id="@+id/hourLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.3h"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

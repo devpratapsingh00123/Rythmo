@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347458557971",
+    "project_id": "rythmo-30b1f",
+    "storage_bucket": "rythmo-30b1f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347458557971:android:cc130da9c39d99c44e87e6",
+        "android_client_info": {
+          "package_name": "com.example.rythmo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARkjR5ehphl37DElvHxz9pvR-nR_5LCoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

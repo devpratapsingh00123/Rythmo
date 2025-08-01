@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/main_background_gradient">
+
+    <!-- Card: Top Mood -->
+    <LinearLayout
+        android:id="@+id/topMoodCard"
+        style="@style/StatsCardStyle"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/StatsCardLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Mood" />
+
+        <TextView
+            android:id="@+id/topMoodText"
+            style="@style/StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--" />
+    </LinearLayout>
+
+    <!-- Card: Total Minutes -->
+    <LinearLayout
+        android:id="@+id/totalMinutesCard"
+        style="@style/StatsCardStyle"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/topMoodCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            style="@style/StatsCardLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Listening Time" />
+
+        <TextView
+            android:id="@+id/totalMinutesText"
+            style="@style/StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--" />
+    </LinearLayout>
+
+    <!-- Weekly Graph Label -->
+    <TextView
+        android:id="@+id/weeklyGraphLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekly Listening Graph"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/totalMinutesCard"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Weekly Graph RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weeklyStatsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/weeklyGraphLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:overScrollMode="never" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

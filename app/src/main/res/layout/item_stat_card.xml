@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:layout_columnWeight="1"
+    android:background="@drawable/stat_card_background"
+    android:padding="16dp"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:minHeight="100dp">
+
+    <!-- Icon -->
+    <TextView
+        android:id="@+id/statIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎧"
+        android:textSize="28sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Value -->
+    <TextView
+        android:id="@+id/statValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.2h"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/statLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

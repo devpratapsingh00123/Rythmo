@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rythmo_purple_dark">#1A002F</color>  <!-- Base Background -->
+    <color name="rythmo_purple_mid">#3B0D62</color>   <!-- Mid Gradient -->
+    <color name="rythmo_purple_light">#8425C0</color> <!-- Top Gradient -->
+    <color name="rythmo_pink">#EF4EC7</color>         <!-- App Name / Accent -->
+    <color name="tab_unselected">#CCCCCC</color>      <!-- Tab Unselected Text -->
+    <color name="tab_selected">#FFFFFF</color>        <!-- Tab Selected Text -->
+    <color name="dropdown_bg">#18171C</color>         <!-- Dropdown background -->
+</resources>

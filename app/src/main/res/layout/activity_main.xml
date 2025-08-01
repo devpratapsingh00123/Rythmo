@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_gradient">
+
+    <!-- AppBar with Toolbar and TabLayout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:background="@drawable/main_background_gradient">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/main_background_gradient"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:title=""
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_background_gradient">
+
+                <!-- App Name -->
+                <TextView
+                    android:id="@+id/appTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rythmo"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/rythmo_pink"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <!-- Profile Icon -->
+                <ImageView
+                    android:id="@+id/dropdownButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_user_circle"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Open Profile Menu"
+                    android:padding="4dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- TabLayout with matching background -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_background_gradient"
+            app:tabIndicatorColor="@color/rythmo_pink"
+            app:tabSelectedTextColor="@color/tab_selected"
+            app:tabTextColor="@color/tab_unselected"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:layout_marginTop="4dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

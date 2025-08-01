@@ -1,0 +1,11 @@
+<!-- res/drawable/dropdown_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#1E1E1E" /> <!-- dark background -->
+    <corners android:radius="12dp" />
+    <padding
+        android:left="12dp"
+        android:right="12dp"
+        android:top="12dp"
+        android:bottom="12dp"/>
+</shape>
