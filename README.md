@@ -2,9 +2,6 @@
 
 **Rythmo** — mood-based music player (Android, Kotlin)
 
-## About
-Short 1–2 line summary: what the app does and why it exists.
-
 ## Features
 - Mood selection and playlist generation
 - Profile setup with image upload (gallery only)
