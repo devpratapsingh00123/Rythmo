@@ -5,9 +5,6 @@
 ## About
 Short 1–2 line summary: what the app does and why it exists.
 
-## Screenshots
-(Insert images or GIFs here)
-
 ## Features
 - Mood selection and playlist generation
 - Profile setup with image upload (gallery only)
